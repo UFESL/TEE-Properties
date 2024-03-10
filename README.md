@@ -25,6 +25,7 @@ To run:
 ```
 ## Environment
 Python
+
 Ubuntu/Linux
 
 ## Input
