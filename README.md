@@ -29,7 +29,7 @@ To use the tool, execute the following commands:
 ## Environment Requirements
 
 - **Python**: The tool is developed and tested with Python. Ensure Python is installed and configured on your system.
-- **Operating System**: Designed to run on Ubuntu/Linux. Compatibility with other OSes is not guaranteed.
+- **Operating System**: Designed to run on Ubuntu/Linux.
 
 ## Input
 
