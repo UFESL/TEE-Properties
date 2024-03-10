@@ -23,12 +23,16 @@ To run:
 ./property_generation <fsm_file>
 ./property_generation fsm.json
 ```
+## Environment
+Python
+Ubuntu/Linux
+
 ## Input
-Provide the FSM similar to the global FSM provided in [parameter file](fsm.json)
+Provide the FSM similar to the global FSM provided in [fsm.json](fsm.json)
 
 <img src="globalfsm1.pdf"
      alt="Sample global FSM in fsm.json file"
      style="float: center; margin-right: 10px;" 
      align="center"/>
 ## Output
-Set of properties for Saftey, Liveness and Concurrency. This is created as [parameter file](property.txt)
+Set of properties for Saftey, Liveness and Concurrency. This is created as [property.txt](property.txt)
