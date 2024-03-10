@@ -24,8 +24,9 @@ To run:
 ./property_generation fsm.json
 ```
 ## Environment
--Python
--Ubuntu/Linux
+Python
+
+Ubuntu/Linux
 
 ## Input
 Provide the FSM similar to the global FSM provided in [fsm.json](fsm.json)
