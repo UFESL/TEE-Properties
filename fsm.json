@@ -1,0 +1,45 @@
+{
+    "GlobalFSM": {
+        "FSM1": {
+            "Name": "TD_Life_Cycle",
+            "States": ["q0", "HKID_Assigned", "Keys_Configured", "Blocked","Teardown"],
+            "Initial": "q0",
+            "Transitions": {
+                "q0": {"create": "HKID_Assigned"},
+                "HKID_Assigned": {"config": "Keys_Configured","vpflush": "Blocked"},
+                "Keys_Configured": {"vpflush": "Blocked"},
+                "Blocked": {"freeid": "Teardown"},
+                "Teardown": {"reclaim": "q0"}
+            },
+            "Output": {
+                "q0": "Inactive",
+                "HKID_Assigned": "Active",
+                "Keys_Configured": "Active",
+                "Blocked": "Active",
+                "Teardown": "Inactive"
+            }
+        },
+        "FSM2": {
+            "Name": "Key_Management",
+            "States": ["Free", "Assigned", "Flushed"],
+            "Initial": "Free",
+            "Transitions": {
+                "Free": {"config": "Assigned"},
+                "Assigned": {"vpflush": "Flushed"},
+                "Flushed": {"freeid": "Free"}  
+            },
+            "Output": {
+                "Free": "Inactive",
+                "Assigned": "Active",
+                "Flushed": "Active"
+            }
+        },
+        "GlobalTransitions": {
+            "q0": "Free",
+            "Teardown": "Free",  
+            "Blocked": "Flushed",
+            "Keys_Configured": "Assigned",
+            "HKID_Assigned": "Assigned"  
+        }
+    }
+}
