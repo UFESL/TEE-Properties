@@ -4,7 +4,7 @@ TEE-Properties provides an executable of template based property generation for 
 This is developed at [Embedded Systems Lab, Department of Computer Science, University of Florida](https://www.cise.ufl.edu/research/cad), as a deliverable for a [SRC](https://www.src.org/) project.
 
 ## Overview
-<img src="overview_date24.pdf"
+<img src="overview-1.jpg"
      alt="Overview of template based property generation for TEE architecture"
      style="float: center; margin-right: 10px;" 
      align="center"/>
@@ -31,7 +31,7 @@ Ubuntu/Linux
 ## Input
 Provide the FSM similar to the global FSM provided in [fsm.json](fsm.json)
 
-<img src="globalfsm1.pdf"
+<img src="samplefsm-1.jpg"
      alt="Sample global FSM in fsm.json file"
      style="float: center; margin-right: 10px;" 
      align="center"/>
