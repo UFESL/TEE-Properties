@@ -29,7 +29,7 @@ Python
 Ubuntu/Linux
 
 ## Input
-Provide the FSM similar to the global FSM provided in [fsm.json](fsm.json)
+Provide the FSM similar to the global FSM in [fsm.json](fsm.json)
 
 <img src="samplefsm-1.jpg"
      alt="Sample global FSM in fsm.json file"
