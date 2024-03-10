@@ -1,7 +1,7 @@
 # TEE-Properties
 
 ### Overview
-<img src="images/overview_date24.pdf"
+<img src="overview_date24.pdf"
      alt="Overview of template based property generation for TEE architecture"
      style="float: center; margin-right: 10px;" 
      align="center"/>
